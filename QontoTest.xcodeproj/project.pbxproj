@@ -10,11 +10,11 @@
 		C375C971F6B56D7CE9D8A5A3 /* Pods_QontoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0D2399AC983DCC8FC264C7 /* Pods_QontoTestTests.framework */; };
 		D79F823C24C99AFB0F229614 /* Pods_QontoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5177245ED534A3DA1417F4 /* Pods_QontoTest.framework */; };
 		E79BA08F1DEF53B30033488E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA08E1DEF53B30033488E /* AppDelegate.swift */; };
-		E79BA0911DEF53B30033488E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0901DEF53B30033488E /* ViewController.swift */; };
 		E79BA0941DEF53B30033488E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0921DEF53B30033488E /* Main.storyboard */; };
 		E79BA0961DEF53B30033488E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0951DEF53B30033488E /* Assets.xcassets */; };
 		E79BA0991DEF53B30033488E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0971DEF53B30033488E /* LaunchScreen.storyboard */; };
 		E79BA0A41DEF53B30033488E /* QontoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0A31DEF53B30033488E /* QontoTestTests.swift */; };
+		E79BA0B41DEF54C60033488E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B11DEF54C60033488E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 		C0A3E8CA3F4F430B01451C4D /* Pods-QontoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTest/Pods-QontoTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E79BA08B1DEF53B30033488E /* QontoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA08E1DEF53B30033488E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E79BA0901DEF53B30033488E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E79BA0931DEF53B30033488E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E79BA0951DEF53B30033488E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79BA0981DEF53B30033488E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		E79BA09F1DEF53B30033488E /* QontoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QontoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA0A31DEF53B30033488E /* QontoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QontoTestTests.swift; sourceTree = "<group>"; };
 		E79BA0A51DEF53B30033488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79BA0B11DEF54C60033488E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +109,8 @@
 		E79BA08D1DEF53B30033488E /* QontoTest */ = {
 			isa = PBXGroup;
 			children = (
+				E79BA0AE1DEF54C60033488E /* Classes */,
 				E79BA08E1DEF53B30033488E /* AppDelegate.swift */,
-				E79BA0901DEF53B30033488E /* ViewController.swift */,
-				E79BA0921DEF53B30033488E /* Main.storyboard */,
 				E79BA0951DEF53B30033488E /* Assets.xcassets */,
 				E79BA0971DEF53B30033488E /* LaunchScreen.storyboard */,
 				E79BA09A1DEF53B30033488E /* Info.plist */,
@@ -126,6 +125,55 @@
 				E79BA0A51DEF53B30033488E /* Info.plist */,
 			);
 			path = QontoTestTests;
+			sourceTree = "<group>";
+		};
+		E79BA0AE1DEF54C60033488E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E79BA0B51DEF54E50033488E /* UI */,
+				E79BA0AF1DEF54C60033488E /* Model */,
+				E79BA0B01DEF54C60033488E /* ViewControllers */,
+				E79BA0B21DEF54C60033488E /* ViewModels */,
+				E79BA0B31DEF54C60033488E /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E79BA0AF1DEF54C60033488E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E79BA0B01DEF54C60033488E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E79BA0B11DEF54C60033488E /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E79BA0B21DEF54C60033488E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E79BA0B31DEF54C60033488E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E79BA0B51DEF54E50033488E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E79BA0921DEF53B30033488E /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E79BA0911DEF53B30033488E /* ViewController.swift in Sources */,
+				E79BA0B41DEF54C60033488E /* ViewController.swift in Sources */,
 				E79BA08F1DEF53B30033488E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +410,7 @@
 				E79BA0931DEF53B30033488E /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		E79BA0971DEF53B30033488E /* LaunchScreen.storyboard */ = {
@@ -545,6 +594,7 @@
 				E79BA0AA1DEF53B30033488E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E79BA0AB1DEF53B30033488E /* Build configuration list for PBXNativeTarget "QontoTestTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +603,7 @@
 				E79BA0AD1DEF53B30033488E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
