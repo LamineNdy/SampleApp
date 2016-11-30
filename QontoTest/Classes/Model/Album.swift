@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class Album: NSObject {
+final class Album: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable  {
   
   var userId: Int?
   var albumId: Int?
@@ -20,4 +21,33 @@ class Album: NSObject {
     self.title = title
   }
   
+  override init() {
+  }
+  
+  //Mark:- ResponseObjectSerializable, ResponseCollectionSerializable methods
+  required convenience init?(response: HTTPURLResponse, representation: AnyObject) {
+    self.init()
+    self.populateFromResult(representation)
+  }
+  
+  static func collection(from response: HTTPURLResponse, withRepresentation representation: Any) -> [Album] {
+    var albums = [Album]()
+    if let jsonValues = representation as? [[String: AnyObject]] {
+      for storeRepresentation in jsonValues {
+        if let album = Album(response: response, representation: storeRepresentation as AnyObject) {
+          albums.append(album)
+        }
+      }
+    }
+    return albums
+  }
+  
+  func populateFromResult(_ representation: AnyObject?) {
+    if let jsonRepresentation = representation {
+      let json = JSON(jsonRepresentation)
+      userId = json["userId"].intValue
+      albumId = json["id"].intValue
+      title = json["title"].stringValue
+    }
+  }
 }
