@@ -15,6 +15,9 @@
 		E79BA0991DEF53B30033488E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0971DEF53B30033488E /* LaunchScreen.storyboard */; };
 		E79BA0A41DEF53B30033488E /* QontoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0A31DEF53B30033488E /* QontoTestTests.swift */; };
 		E79BA0B41DEF54C60033488E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B11DEF54C60033488E /* ViewController.swift */; };
+		E79BA0B71DEF55470033488E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B61DEF55470033488E /* User.swift */; };
+		E79BA0B91DEF55540033488E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B81DEF55540033488E /* Album.swift */; };
+		E79BA0BB1DEF555E0033488E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0BA1DEF555E0033488E /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		E79BA0A31DEF53B30033488E /* QontoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QontoTestTests.swift; sourceTree = "<group>"; };
 		E79BA0A51DEF53B30033488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79BA0B11DEF54C60033488E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E79BA0B61DEF55470033488E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E79BA0B81DEF55540033488E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E79BA0BA1DEF555E0033488E /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,9 @@
 		E79BA0AF1DEF54C60033488E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E79BA0B61DEF55470033488E /* User.swift */,
+				E79BA0B81DEF55540033488E /* Album.swift */,
+				E79BA0BA1DEF555E0033488E /* Photo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +391,9 @@
 			files = (
 				E79BA0B41DEF54C60033488E /* ViewController.swift in Sources */,
 				E79BA08F1DEF53B30033488E /* AppDelegate.swift in Sources */,
+				E79BA0B71DEF55470033488E /* User.swift in Sources */,
+				E79BA0B91DEF55540033488E /* Album.swift in Sources */,
+				E79BA0BB1DEF555E0033488E /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
