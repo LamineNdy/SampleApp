@@ -16,8 +16,8 @@ Implémentation de Nscoding qui va permettre encodé les objects en un format co
 
 ## UI ##
 TableViewController avec transition en segue, pas besoin de plusieurs storyboard, nous avons un seul workflow
-Je suis partie sur des vues assez basiques, donc pas besoin de créer des sous classes pour les cellules, ou des presentations control pour découper les vues.
-En temps normal il est recommandé de créer une extension pour chaque protocol implémenté, par exemple pour un tableviewController X, créeer une extension X+datasource et X+delegate pour séparer les logiques et répondre au Single Responsability Principle
+Je suis parti sur des vues assez basiques, donc pas besoin de créer des sous classes pour les cellules, ou des presentations control pour découper les vues.
+En temps normal il est recommandé de créer une extension pour chaque protocol implémenté, par exemple pour un tableviewController X, créer une extension X+datasource et X+delegate pour séparer les logiques et répondre au Single Responsability Principle
 j'ai aussi rajouté un pull to refresh pour recharger els données
 
 #Outils#
@@ -27,7 +27,6 @@ j'ai aussi rajouté un pull to refresh pour recharger els données
 
 #Frameworks#
 Alamofire et swiftyjson: Requêtes webservice et exploitation json
-Reachability : test connexion internet
 OhHttpStubs: Applications de bouchons réseaux , utiles pour les test unitaires
        
 
