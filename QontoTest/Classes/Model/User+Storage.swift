@@ -12,7 +12,7 @@ let kUserDefaultkey = "UsersKey"
 
 extension User {
   
-  class func storedUsers() -> [User]? {
+  class func savedUsers() -> [User]? {
     if let data = UserDefaults.standard.object(forKey: kUserDefaultkey) as? Data {
       return NSKeyedUnarchiver.unarchiveObject(with: data) as? [User]
     }
@@ -22,7 +22,7 @@ extension User {
   
   class func saveUsers(_ fetchedUsers: [User]) {
     for user in fetchedUsers {
-      if var users = self.storedUsers() as [User]? {
+      if var users = self.savedUsers() as [User]? {
         users.append(user)
         let archivedData = NSKeyedArchiver.archivedData(withRootObject: users)
         UserDefaults.standard.set(archivedData, forKey: kUserDefaultkey)

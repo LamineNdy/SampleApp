@@ -82,7 +82,7 @@ class UserTableViewController: UITableViewController {
         User.saveUsers(users)
       } else {
         print(error!)
-        self.users = User.storedUsers()
+        self.users = User.savedUsers()
         DispatchQueue.main.async {
           self.showAlert(title: "Error", message: "An error occured,")
           print(error!)
