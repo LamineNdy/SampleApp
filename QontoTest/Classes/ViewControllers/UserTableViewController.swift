@@ -66,7 +66,10 @@ class UserTableViewController: UITableViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "album" {
       let vc = segue.destination as? AlbumTableViewController
-      vc?.userId = selectedRow
+      if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) {
+        let user = self.users?[indexPath.row]
+      vc?.userId = user?.userId
+      }
     }
   }
 

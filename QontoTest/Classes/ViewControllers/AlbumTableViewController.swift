@@ -15,8 +15,8 @@ class AlbumTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    //userId!
-    WebService.fetchAlbums(1) { (albums, error) -> () in
+    
+    WebService.fetchAlbums(userId!) { (albums, error) -> () in
       if error == nil {
         DispatchQueue.main.async {
           self.albums = albums
