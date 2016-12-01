@@ -35,5 +35,5 @@ OhHttpStubs: Applications de bouchons réseaux , utiles pour les test unitaires
 #Difficultés#
 Ecrire la classe response serializer
 
-pourcentage de complétion : 80% car le test coverage pourrait être amélioré, ce qui a été fait survole mon approche vis à vis des test.
+pourcentage de complétion : 80% car le test coverage pourrait être amélioré, ce qui a été fait survole mon approche vis à vis des tests.
 - Le design reste basique, pourrait sans doute est plus travaillé avec des vues customs
