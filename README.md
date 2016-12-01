@@ -5,9 +5,9 @@
 
 #Tets unitaires#
 - Pattern factory pour mocker les objects métiers
-- Pour le cas pratique et vu le timing j'ai préféré faire le développement directement puis la test unitaires plus tard. En temps normal j'aurais fais du Test Driven Development, qui reste pour moi la meilleures façon de produire du code scalable et robuste, et de garder une productivité exponentielle durant un projet , et surtout beaucoup plus de test coverage.
+- Pour le cas pratique et vu le timing j'ai préféré faire le développement directement puis les test unitaires plus tard. En temps normal j'aurais fais du Test Driven Development, qui reste pour moi la meilleures façon de produire du code scalable et robuste, et de garder une productivité exponentielle durant un projet , et surtout beaucoup plus de test coverage.
 - les élements testés unitairement sont : Les requêtes (success, invalidJson, error) et la persistence des users
-ce qui pourraient être testé: Le router, les méthodes  de construction d'objet à partir de json, les géneration de vues etc..
+Ce qui pourraient être testé: Le router, les méthodes  de construction d'objet à partir de json, les géneration de vues etc..
 
 ## WebServices ##
 - pattern router : Principe -> Avoir une structure qui prend un type d'enum et des paramètre afin de renvoyer une url construire selon la méthode appelée.
@@ -23,7 +23,7 @@ En temps normal il est recommandé de créer une extension pour chaque protocol 
 j'ai aussi rajouté un pull to refresh pour recharger els données
 
 #Outils#
-- gestion des dépendances avec cocoapods
+- Gestion des dépendances avec cocoapods
 - Git pour la gestion de version
 
 
@@ -35,4 +35,5 @@ OhHttpStubs: Applications de bouchons réseaux , utiles pour les test unitaires
 #Difficultés#
 Ecrire la classe response serializer
 
-pourcentage : 80% car le test coverage pourrait être amélioré, et le design reste basique
+pourcentage de complétion : 80% car le test coverage pourrait être amélioré, ce qui a été fait survole mon approche vis à vis des test.
+- Le design reste basique, pourrait sans doute est plus travaillé avec des vues customs
