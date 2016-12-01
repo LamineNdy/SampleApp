@@ -7,29 +7,50 @@
 //
 
 import XCTest
+import OHHTTPStubs
+
+let RequestTimeout: TimeInterval = 30
+let SucceedStatus: Int32 = 200
+let ContentTypeKey = "Content-Type"
+let ContentTypeValue = "application/json"
+
 
 class QontoTestCase: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+  override func setUp() {
+    super.setUp()
+    OHHTTPStubs.removeAllStubs()
+  }
+  
+  override func tearDown() {
+    OHHTTPStubs.removeAllStubs()
+    super.tearDown()
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+  }
+  
+  func setupStub(filename : String, status : Int32) {
+    stub(condition: isExtension("json")) { _ in
+      let stubPath = OHPathForFile(filename, type(of: self))
+      return fixture(filePath: stubPath!, headers: [ContentTypeKey as NSObject: ContentTypeValue as AnyObject])
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+  }
+  
+  func setupStubWithEmptyjson() {
+    stub(condition: isMethodGET()) { _ in
+      return OHHTTPStubsResponse(data: NSData() as Data, statusCode:204, headers:[ContentTypeKey: ContentTypeValue])
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+  }
+  
+  func setupStubWithjson(json: AnyObject!) {
+    stub(condition: isMethodGET()) { _ in
+      return OHHTTPStubsResponse(jsonObject: json, statusCode: 200, headers:[ContentTypeKey: ContentTypeValue])
     }
-    
+  }
+  
+  func setupStubWithError() {
+    stub(condition: isMethodGET()) { _ in
+      return OHHTTPStubsResponse(error: NSError(domain: "error", code: 400, userInfo: nil))
+    }
+  }
+ 
 }

@@ -28,11 +28,11 @@ extension UIViewController {
     blueIndicator.color = UIColor.black
     blueIndicator.startAnimating()
     let activityBarButton = UIBarButtonItem(customView: blueIndicator)
-    navigationItem.setLeftBarButton(activityBarButton, animated: true)
+    navigationItem.setRightBarButton(activityBarButton, animated: true)
   }
   
-  func removeBlueIndicator() {
-    navigationItem.setLeftBarButton(nil, animated: true)
+  func removeIndicator() {
+    navigationItem.setRightBarButton(nil, animated: true)
   }
   
 }

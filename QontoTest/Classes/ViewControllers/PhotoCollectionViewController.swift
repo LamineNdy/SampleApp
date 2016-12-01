@@ -14,51 +14,58 @@ private let reuseIdentifier = "PhotoCellReuseId"
 class PhotoCollectionViewController: UICollectionViewController {
   
   var photos: [Photo]?
-  var albumId:Int?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-      
-      WebService.fetchPhotos(albumId!) {(photos, error) -> () in
-        if error == nil {
-          DispatchQueue.main.async {
-            self.photos = photos
-            self.collectionView?.reloadData()
-          }
-        } else {
-          print(error!)
-        }
-      }
+  var album: Album?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Register cell classes
+    self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+    self.title = album?.title
+    triggerFetch()
   }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
+  
+  // MARK: UICollectionViewDataSource
+  
+  override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 1
+  }
+  
+  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    guard let photos = photos else {
+      return 0
     }
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-     return 1
+    return photos.count
+  }
+  
+  override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    guard let photo = photos?[indexPath.row] else {
+      return UICollectionViewCell()
     }
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      guard let photos = photos else {
-        return 0
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+    let imageView = UIImageView()
+    imageView.sd_setImage(with: NSURL(string: photo.thumbnailUrl ?? "") as! URL)
+    cell.backgroundView = imageView
+    return cell
+  }
+  
+  func triggerFetch() {
+    self.addIndicator()
+    WebService.fetchPhotos((album?.albumId)!) {(photos, error) -> () in
+      if error == nil {
+        self.photos = photos
+      } else {
+        print(error!)
       }
-      return photos.count
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      guard let photo = photos?[indexPath.row] else {
-        return UICollectionViewCell()
+      DispatchQueue.main.async {
+         self.removeIndicator()
+         self.collectionView?.reloadData()
       }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        let imageView = UIImageView()
-        imageView.sd_setImage(with: NSURL(string: photo.thumbnailUrl ?? "") as! URL)
-        cell.backgroundView = imageView
-        return cell
+     
     }
-
+  }
+  
 }
