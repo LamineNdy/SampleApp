@@ -30,6 +30,7 @@ j'ai aussi rajouté un pull to refresh pour recharger els données
 #Frameworks#
 Alamofire et swiftyjson: Requêtes webservice et exploitation json
 OhHttpStubs: Applications de bouchons réseaux , utiles pour les test unitaires
+TSMessages: Custom alerts
        
 
 #Difficultés#
