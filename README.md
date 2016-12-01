@@ -1,6 +1,6 @@
 # README #
 
-#ArchiTECTURE#
+#ARCHITECTURE#
 - MVC, pour un projet plus conséquent j'aurais utilisé MVVM, un pattern inspiré par le .NET qui permet de séparer les logiques et facilite l'implémentation des test unitaires.
 
 #Tets unitaires#
@@ -18,6 +18,7 @@ Implémentation de Nscoding qui va permettre encodé les objects en un format co
 TableViewController avec transition en segue, pas besoin de plusieurs storyboard, nous avons un seul workflow
 Je suis partie sur des vues assez basiques, donc pas besoin de créer des sous classes pour les cellules, ou des presentations control pour découper les vues.
 En temps normal il est recommandé de créer une extension pour chaque protocol implémenté, par exemple pour un tableviewController X, créeer une extension X+datasource et X+delegate pour séparer les logiques et répondre au Single Responsability Principle
+j'ai aussi rajouté un pull to refresh pour recharger els données
 
 #Outils#
 - gestion des dépendances avec cocoapods
