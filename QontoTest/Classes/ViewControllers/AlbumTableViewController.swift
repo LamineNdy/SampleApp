@@ -8,6 +8,10 @@
 
 import UIKit
 
+private let albumCellId = "albumCellReuseIdentifier"
+private let photoSegue = "photos"
+
+
 class AlbumTableViewController: UITableViewController {
   
   var albums: [Album]?
@@ -53,11 +57,20 @@ class AlbumTableViewController: UITableViewController {
     guard let album = albums?[indexPath.row] else {
       return UITableViewCell()
     }
-    let cell = tableView.dequeueReusableCell(withIdentifier: "albumCellReuseIdentifier", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: albumCellId, for: indexPath)
     cell.textLabel?.text = album.title
     return cell
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == photoSegue {
+      let vc = segue.destination as? PhotoCollectionViewController
+      if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) {
+        let album = self.albums?[indexPath.row]
+        vc?.albumId = album?.albumId
+      }
+    }
+  }
   
   /*
    // Override to support conditional editing of the table view.

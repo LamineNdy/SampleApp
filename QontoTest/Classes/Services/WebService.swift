@@ -12,12 +12,9 @@ import Alamofire
 
 private let kRequestTimout: TimeInterval = 60
 let kBaseUrl = "https://jsonplaceholder.typicode.com/"
-// https://jsonplaceholder.typicode.com/users
-//https://jsonplaceholder.typicode.com/users/{user_id}/albums
-// https://jsonplaceholder.typicode.com/albums/{album_id}/photos
 let kuserApi = "users"
 let kAlbumApi = "albums"
-let kPhotoApi = "Photo"
+let kPhotoApi = "photos"
 
 
 
@@ -29,10 +26,6 @@ class WebService: NSObject {
     case fetchUser()
     case fetchUserAlbum(Int)
     case fetchAlbumPhotos(Int)
-    
-//    var headers: [String: String] {
-//      return ["contentType":"application/json; charset=UTF-8"]
-//    }
     
     public func asURLRequest() throws -> URLRequest {
       let path: String = {
@@ -73,6 +66,19 @@ class WebService: NSObject {
         
       case .failure(let error):
         completion([Album](), error as NSError?)
+      }
+    }
+  }
+
+  static func fetchPhotos (_ albumId: Int, _ completion: @escaping (_ photos: [Photo], _ error: NSError?) -> ())  {
+    Alamofire.request(Router.fetchAlbumPhotos(albumId)).responseCollection { (response: DataResponse<[Photo]>)  in
+      switch response.result
+      {
+      case .success(let photos):
+        completion(photos, nil)
+        
+      case .failure(let error):
+        completion([Photo](), error as NSError?)
       }
     }
   }

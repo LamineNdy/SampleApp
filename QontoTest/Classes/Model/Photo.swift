@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class Photo: NSObject {
+final class Photo: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable {
 
   var albumId: Int?
   var photoId: Int?
@@ -21,6 +22,38 @@ class Photo: NSObject {
     self.photoId = photoId
     self.title = title
     self.thumbnailUrl = thumbnailUrl
+  }
+  
+  override init() {
+    
+  }
+  
+  //Mark:- ResponseObjectSerializable, ResponseCollectionSerializable methods
+  required convenience init?(response: HTTPURLResponse, representation: AnyObject) {
+    self.init()
+    self.populateFromResult(representation)
+  }
+  
+  static func collection(from response: HTTPURLResponse, withRepresentation representation: Any) -> [Photo] {
+    var photos = [Photo]()
+    if let jsonValues = representation as? [[String: AnyObject]] {
+      for storeRepresentation in jsonValues {
+        if let photo = Photo(response: response, representation: storeRepresentation as AnyObject) {
+          photos.append(photo)
+        }
+      }
+    }
+    return photos
+  }
+  
+  func populateFromResult(_ representation: AnyObject?) {
+    if let jsonRepresentation = representation {
+      let json = JSON(jsonRepresentation)
+      albumId = json["albumId"].intValue
+      photoId = json["id"].intValue
+      title = json["title"].stringValue
+      thumbnailUrl = json["thumbnailUrl"].stringValue
+    }
   }
   
 }

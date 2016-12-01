@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C375C971F6B56D7CE9D8A5A3 /* Pods_QontoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0D2399AC983DCC8FC264C7 /* Pods_QontoTestTests.framework */; };
+		D6FA361D1DF043F900141094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FA361B1DF043F900141094 /* Main.storyboard */; };
+		D6FA361F1DF0460400141094 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA361E1DF0460400141094 /* PhotoCollectionViewController.swift */; };
 		D79F823C24C99AFB0F229614 /* Pods_QontoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5177245ED534A3DA1417F4 /* Pods_QontoTest.framework */; };
 		E79BA08F1DEF53B30033488E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA08E1DEF53B30033488E /* AppDelegate.swift */; };
-		E79BA0941DEF53B30033488E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0921DEF53B30033488E /* Main.storyboard */; };
 		E79BA0961DEF53B30033488E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0951DEF53B30033488E /* Assets.xcassets */; };
 		E79BA0991DEF53B30033488E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0971DEF53B30033488E /* LaunchScreen.storyboard */; };
 		E79BA0A41DEF53B30033488E /* QontoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0A31DEF53B30033488E /* QontoTestTests.swift */; };
@@ -40,9 +41,10 @@
 		8A0D2399AC983DCC8FC264C7 /* Pods_QontoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B0796E5A214D652F5689ED /* Pods-QontoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTestTests/Pods-QontoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0A3E8CA3F4F430B01451C4D /* Pods-QontoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTest/Pods-QontoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FA361C1DF043F900141094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = QontoTest/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		D6FA361E1DF0460400141094 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		E79BA08B1DEF53B30033488E /* QontoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA08E1DEF53B30033488E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E79BA0931DEF53B30033488E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E79BA0951DEF53B30033488E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79BA0981DEF53B30033488E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79BA09A1DEF53B30033488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				E79BA0C11DEF5DA60033488E /* UserTableViewController.swift */,
 				E79BA0C31DEF62F10033488E /* AlbumTableViewController.swift */,
+				D6FA361E1DF0460400141094 /* PhotoCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,7 +191,7 @@
 		E79BA0B51DEF54E50033488E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E79BA0921DEF53B30033488E /* Main.storyboard */,
+				D6FA361B1DF043F900141094 /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -293,9 +296,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FA361D1DF043F900141094 /* Main.storyboard in Resources */,
 				E79BA0991DEF53B30033488E /* LaunchScreen.storyboard in Resources */,
 				E79BA0961DEF53B30033488E /* Assets.xcassets in Resources */,
-				E79BA0941DEF53B30033488E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +413,7 @@
 				E79BA0C41DEF62F10033488E /* AlbumTableViewController.swift in Sources */,
 				E79BA0C01DEF58DE0033488E /* WebService.swift in Sources */,
 				E79BA0BE1DEF58A70033488E /* ResponseSerializer.swift in Sources */,
+				D6FA361F1DF0460400141094 /* PhotoCollectionViewController.swift in Sources */,
 				E79BA0B71DEF55470033488E /* User.swift in Sources */,
 				E79BA0C21DEF5DA60033488E /* UserTableViewController.swift in Sources */,
 				E79BA0B91DEF55540033488E /* Album.swift in Sources */,
@@ -436,13 +440,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E79BA0921DEF53B30033488E /* Main.storyboard */ = {
+		D6FA361B1DF043F900141094 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E79BA0931DEF53B30033488E /* Base */,
+				D6FA361C1DF043F900141094 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		E79BA0971DEF53B30033488E /* LaunchScreen.storyboard */ = {
