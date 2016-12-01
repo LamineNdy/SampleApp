@@ -9,5 +9,25 @@
 import UIKit
 
 class PhotoBuilder: NSObject {
+  
+  private var albumId: Int = 0
+  private var photoId: Int = 0
+  private var title : String = ""
+  
+  func build() -> Photo {
+    
+    let photo = Photo()
+    photo.title = title
+    photo.photoId = photoId
+    photo.albumId = albumId
+    return photo
+  }
+  
+  func initWith(photoId: Int, title :String, albumId: Int) -> PhotoBuilder {
+    self.photoId = photoId
+    self.title = title
+    self.albumId = albumId
+    return self
+  }
 
 }

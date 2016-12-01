@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772F4AC76FB8B07F9368057B /* Pods_QontoTest_QontoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82EC2EF4AE6B561E1793A0D /* Pods_QontoTest_QontoTestTests.framework */; };
 		C375C971F6B56D7CE9D8A5A3 /* Pods_QontoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0D2399AC983DCC8FC264C7 /* Pods_QontoTestTests.framework */; };
+		D6F3A0161DF0794600FED04E /* QontoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3A0151DF0794600FED04E /* QontoTestTests.swift */; };
+		D6F3A0181DF079F900FED04E /* QontoTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3A0171DF079F900FED04E /* QontoTestCase.swift */; };
+		D6F3A01A1DF07D3E00FED04E /* BuilMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3A0191DF07D3E00FED04E /* BuilMe.swift */; };
+		D6F3A01C1DF0822700FED04E /* UserBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3A01B1DF0822700FED04E /* UserBuilder.swift */; };
+		D6F3A01E1DF0824A00FED04E /* PhotoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3A01D1DF0824A00FED04E /* PhotoBuilder.swift */; };
+		D6F3A0201DF0827700FED04E /* AlbumBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3A01F1DF0827700FED04E /* AlbumBuilder.swift */; };
+		D6F3A0211DF0838800FED04E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B61DEF55470033488E /* User.swift */; };
+		D6F3A0221DF0838A00FED04E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0BA1DEF555E0033488E /* Photo.swift */; };
+		D6F3A0231DF0838D00FED04E /* User+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA36201DF04E7200141094 /* User+Storage.swift */; };
+		D6F3A0241DF0839000FED04E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B81DEF55540033488E /* Album.swift */; };
 		D6FA361D1DF043F900141094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FA361B1DF043F900141094 /* Main.storyboard */; };
 		D6FA361F1DF0460400141094 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA361E1DF0460400141094 /* PhotoCollectionViewController.swift */; };
+		D6FA36211DF04E7200141094 /* User+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA36201DF04E7200141094 /* User+Storage.swift */; };
+		D6FA36231DF061FE00141094 /* UIViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FA36221DF061FE00141094 /* UIViewController+UI.swift */; };
 		D79F823C24C99AFB0F229614 /* Pods_QontoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5177245ED534A3DA1417F4 /* Pods_QontoTest.framework */; };
 		E79BA08F1DEF53B30033488E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA08E1DEF53B30033488E /* AppDelegate.swift */; };
 		E79BA0961DEF53B30033488E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0951DEF53B30033488E /* Assets.xcassets */; };
 		E79BA0991DEF53B30033488E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BA0971DEF53B30033488E /* LaunchScreen.storyboard */; };
-		E79BA0A41DEF53B30033488E /* QontoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0A31DEF53B30033488E /* QontoTestTests.swift */; };
 		E79BA0B71DEF55470033488E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B61DEF55470033488E /* User.swift */; };
 		E79BA0B91DEF55540033488E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0B81DEF55540033488E /* Album.swift */; };
 		E79BA0BB1DEF555E0033488E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BA0BA1DEF555E0033488E /* Photo.swift */; };
@@ -37,19 +49,29 @@
 /* Begin PBXFileReference section */
 		1E3C8B85B48E149CA766A008 /* Pods-QontoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTestTests/Pods-QontoTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		47B1BC2C57D74104744D91EC /* Pods-QontoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTest/Pods-QontoTest.release.xcconfig"; sourceTree = "<group>"; };
+		5D116D10A15156F31AA422CD /* Pods-QontoTest-QontoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTest-QontoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTest-QontoTestTests/Pods-QontoTest-QontoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E5177245ED534A3DA1417F4 /* Pods_QontoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0D2399AC983DCC8FC264C7 /* Pods_QontoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B0796E5A214D652F5689ED /* Pods-QontoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTestTests/Pods-QontoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0A3E8CA3F4F430B01451C4D /* Pods-QontoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTest/Pods-QontoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CF7345E951547585DEB0EA81 /* Pods-QontoTest-QontoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoTest-QontoTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QontoTest-QontoTestTests/Pods-QontoTest-QontoTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6F3A0151DF0794600FED04E /* QontoTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QontoTestTests.swift; sourceTree = "<group>"; };
+		D6F3A0171DF079F900FED04E /* QontoTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QontoTestCase.swift; sourceTree = "<group>"; };
+		D6F3A0191DF07D3E00FED04E /* BuilMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilMe.swift; sourceTree = "<group>"; };
+		D6F3A01B1DF0822700FED04E /* UserBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBuilder.swift; sourceTree = "<group>"; };
+		D6F3A01D1DF0824A00FED04E /* PhotoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBuilder.swift; sourceTree = "<group>"; };
+		D6F3A01F1DF0827700FED04E /* AlbumBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumBuilder.swift; sourceTree = "<group>"; };
 		D6FA361C1DF043F900141094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = QontoTest/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		D6FA361E1DF0460400141094 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		D6FA36201DF04E7200141094 /* User+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Storage.swift"; sourceTree = "<group>"; };
+		D6FA36221DF061FE00141094 /* UIViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UI.swift"; sourceTree = "<group>"; };
+		D82EC2EF4AE6B561E1793A0D /* Pods_QontoTest_QontoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoTest_QontoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA08B1DEF53B30033488E /* QontoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA08E1DEF53B30033488E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79BA0951DEF53B30033488E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79BA0981DEF53B30033488E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79BA09A1DEF53B30033488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79BA09F1DEF53B30033488E /* QontoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QontoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E79BA0A31DEF53B30033488E /* QontoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QontoTestTests.swift; sourceTree = "<group>"; };
 		E79BA0A51DEF53B30033488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79BA0B61DEF55470033488E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E79BA0B81DEF55540033488E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
@@ -74,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C375C971F6B56D7CE9D8A5A3 /* Pods_QontoTestTests.framework in Frameworks */,
+				772F4AC76FB8B07F9368057B /* Pods_QontoTest_QontoTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,7 @@
 			children = (
 				7E5177245ED534A3DA1417F4 /* Pods_QontoTest.framework */,
 				8A0D2399AC983DCC8FC264C7 /* Pods_QontoTestTests.framework */,
+				D82EC2EF4AE6B561E1793A0D /* Pods_QontoTest_QontoTestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,8 +120,37 @@
 				47B1BC2C57D74104744D91EC /* Pods-QontoTest.release.xcconfig */,
 				A6B0796E5A214D652F5689ED /* Pods-QontoTestTests.debug.xcconfig */,
 				1E3C8B85B48E149CA766A008 /* Pods-QontoTestTests.release.xcconfig */,
+				5D116D10A15156F31AA422CD /* Pods-QontoTest-QontoTestTests.debug.xcconfig */,
+				CF7345E951547585DEB0EA81 /* Pods-QontoTest-QontoTestTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D6F3A0121DF0794600FED04E /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				D6F3A0191DF07D3E00FED04E /* BuilMe.swift */,
+				D6F3A01B1DF0822700FED04E /* UserBuilder.swift */,
+				D6F3A01D1DF0824A00FED04E /* PhotoBuilder.swift */,
+				D6F3A01F1DF0827700FED04E /* AlbumBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		D6F3A0131DF0794600FED04E /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		D6F3A0141DF0794600FED04E /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				D6F3A0151DF0794600FED04E /* QontoTestTests.swift */,
+				D6F3A0171DF079F900FED04E /* QontoTestCase.swift */,
+			);
+			path = TestCases;
 			sourceTree = "<group>";
 		};
 		E79BA0821DEF53B30033488E = {
@@ -135,7 +188,9 @@
 		E79BA0A21DEF53B30033488E /* QontoTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				E79BA0A31DEF53B30033488E /* QontoTestTests.swift */,
+				D6F3A0121DF0794600FED04E /* Builders */,
+				D6F3A0131DF0794600FED04E /* Fixtures */,
+				D6F3A0141DF0794600FED04E /* TestCases */,
 				E79BA0A51DEF53B30033488E /* Info.plist */,
 			);
 			path = QontoTestTests;
@@ -160,6 +215,7 @@
 				E79BA0B61DEF55470033488E /* User.swift */,
 				E79BA0B81DEF55540033488E /* Album.swift */,
 				E79BA0BA1DEF555E0033488E /* Photo.swift */,
+				D6FA36201DF04E7200141094 /* User+Storage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +226,7 @@
 				E79BA0C11DEF5DA60033488E /* UserTableViewController.swift */,
 				E79BA0C31DEF62F10033488E /* AlbumTableViewController.swift */,
 				D6FA361E1DF0460400141094 /* PhotoCollectionViewController.swift */,
+				D6FA36221DF061FE00141094 /* UIViewController+UI.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -409,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FA36211DF04E7200141094 /* User+Storage.swift in Sources */,
 				E79BA08F1DEF53B30033488E /* AppDelegate.swift in Sources */,
 				E79BA0C41DEF62F10033488E /* AlbumTableViewController.swift in Sources */,
 				E79BA0C01DEF58DE0033488E /* WebService.swift in Sources */,
@@ -416,6 +474,7 @@
 				D6FA361F1DF0460400141094 /* PhotoCollectionViewController.swift in Sources */,
 				E79BA0B71DEF55470033488E /* User.swift in Sources */,
 				E79BA0C21DEF5DA60033488E /* UserTableViewController.swift in Sources */,
+				D6FA36231DF061FE00141094 /* UIViewController+UI.swift in Sources */,
 				E79BA0B91DEF55540033488E /* Album.swift in Sources */,
 				E79BA0BB1DEF555E0033488E /* Photo.swift in Sources */,
 			);
@@ -425,7 +484,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E79BA0A41DEF53B30033488E /* QontoTestTests.swift in Sources */,
+				D6F3A0231DF0838D00FED04E /* User+Storage.swift in Sources */,
+				D6F3A0221DF0838A00FED04E /* Photo.swift in Sources */,
+				D6F3A01E1DF0824A00FED04E /* PhotoBuilder.swift in Sources */,
+				D6F3A0161DF0794600FED04E /* QontoTestTests.swift in Sources */,
+				D6F3A0181DF079F900FED04E /* QontoTestCase.swift in Sources */,
+				D6F3A0201DF0827700FED04E /* AlbumBuilder.swift in Sources */,
+				D6F3A01C1DF0822700FED04E /* UserBuilder.swift in Sources */,
+				D6F3A01A1DF07D3E00FED04E /* BuilMe.swift in Sources */,
+				D6F3A0211DF0838800FED04E /* User.swift in Sources */,
+				D6F3A0241DF0839000FED04E /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

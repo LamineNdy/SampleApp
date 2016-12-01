@@ -9,5 +9,24 @@
 import UIKit
 
 class AlbumBuilder: NSObject {
+  private var title :String = ""
+  private var albumId :Int = 0
+  private var userId:Int = 0
+  
+  func build() -> Album {
+    
+    let album = Album()
+    album.albumId = albumId
+    album.title = title
+    album.userId = userId
+    return album
+  }
+  
+  func initwith(title: String, userId: Int, albumId: Int) -> AlbumBuilder {
+    self.title = title
+    self.userId = userId
+    self.albumId = albumId
+    return self
+  }
 
 }
