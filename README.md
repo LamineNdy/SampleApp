@@ -5,7 +5,7 @@
 
 #Tets unitaires#
 - Pattern factory pour mocker les objects métiers
-- Pour le cas pratique et vu le timing j'ai préféré faire le développement directement puis la test unitaires plus tard. En temps normal j'aurais fais du Test Driven Development, qui reste pour moi la meilleures façon de produire du code scalable et robuste, et de garder une productivité exponentielle durant un projet.
+- Pour le cas pratique et vu le timing j'ai préféré faire le développement directement puis la test unitaires plus tard. En temps normal j'aurais fais du Test Driven Development, qui reste pour moi la meilleures façon de produire du code scalable et robuste, et de garder une productivité exponentielle durant un projet , et surtout beaucoup plus de test coverage.
 
 ## WebServices ##
 - pattern router : Principe -> Avoir une structure qui prend un type d'enum et des paramètre afin de renvoyer une url construire selon la méthode appelée.
