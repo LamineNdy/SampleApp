@@ -10,7 +10,8 @@ target 'QontoTest' do
 
   target 'QontoTestTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'OHHTTPStubs'
+    pod 'OHHTTPStubs/Swift'
   end
 
 end
