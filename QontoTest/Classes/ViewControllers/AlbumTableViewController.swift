@@ -74,7 +74,7 @@ class AlbumTableViewController: UITableViewController {
         }
       } else {
         DispatchQueue.main.async {
-          self.showAlert(title: "Error", message: "An error occured,")
+          self.showAlert(message: "Error")
           self.refreshControl?.endRefreshing()
           print(error!)
         }

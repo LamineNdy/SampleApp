@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+
 private let userCellId = "DefaultCelll"
 private let albumSegueId = "album"
 
@@ -84,7 +86,7 @@ class UserTableViewController: UITableViewController {
         print(error!)
         self.users = User.savedUsers()
         DispatchQueue.main.async {
-          self.showAlert(title: "Error", message: "An error occured,")
+          self.showAlert(message: "An error occured,")
           print(error!)
         }
       }
@@ -95,5 +97,4 @@ class UserTableViewController: UITableViewController {
       }
     }
   }
-  
 }

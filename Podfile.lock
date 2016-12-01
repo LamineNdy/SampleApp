@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.2.0)
+  - HexColors (2.3.0)
   - OHHTTPStubs (5.2.3):
     - OHHTTPStubs/Default (= 5.2.3)
   - OHHTTPStubs/Core (5.2.3)
@@ -19,6 +20,8 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SwiftyJSON (3.1.3)
+  - TSMessages (0.9.13):
+    - HexColors (~> 2.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
@@ -26,13 +29,25 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
   - SDWebImage (~> 3.8)
   - SwiftyJSON
+  - TSMessages (from `https://github.com/KrauseFx/TSMessages.git`)
+
+EXTERNAL SOURCES:
+  TSMessages:
+    :git: https://github.com/KrauseFx/TSMessages.git
+
+CHECKOUT OPTIONS:
+  TSMessages:
+    :commit: 949e7559c60a8863f33c5fd2cbc55e8efbb4b53f
+    :git: https://github.com/KrauseFx/TSMessages.git
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  HexColors: 6ad3947c3447a055a3aa8efa859def096351fe5f
   OHHTTPStubs: e238cd5b66d8efa51c861db45895de8fe079f4a7
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+  TSMessages: eb3cf27b6900684a21bad4fe9ea426e287b8c839
 
-PODFILE CHECKSUM: 94247f070277103f894e00ba70a5698b450266a7
+PODFILE CHECKSUM: 78752766a686cfa7d0b041b29ba4cc675da4604f
 
 COCOAPODS: 1.1.1
