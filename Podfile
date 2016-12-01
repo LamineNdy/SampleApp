@@ -7,6 +7,7 @@ target 'QontoTest' do
   pod 'SDWebImage', '~>3.8'
   pod 'Alamofire', '~> 4.0'
   pod 'SwiftyJSON'
+  pod 'TSMessages', :git => 'https://github.com/KrauseFx/TSMessages.git'
 
   target 'QontoTestTests' do
     inherit! :search_paths

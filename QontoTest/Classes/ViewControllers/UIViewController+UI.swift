@@ -8,19 +8,12 @@
 
 import Foundation
 import UIKit
+import TSMessages
 
 extension UIViewController {
   
-  func showAlert(title: String?, message: String?) {
-    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-    
-    let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
-      self.dismiss(animated: true, completion: nil)
-    }
-    alertController.addAction(OKAction)
-    
-    self.present(alertController, animated: true) {
-    }
+  func showAlert(message: String?) {
+    TSMessage.showNotification(withTitle: message, type:.error)
   }
   
   func addIndicator() {

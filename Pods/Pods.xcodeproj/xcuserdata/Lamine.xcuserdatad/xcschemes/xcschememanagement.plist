@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HexColors.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>OHHTTPStubs.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-QontoTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,15 +39,40 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TSMessages.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3C6D60DB6B15D1EC5DCF1BFFDDE96102</key>
+		<key>0701A5848CB7145F872792FCD30EBAF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>42C3ECC522AC5DFB7E69C833F02C67C2</key>
+		<key>1AF7C1D8F46A45C004D58BB6F6B60FC0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F261E1ADD34AEC7661CA238B7589336</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3ADDFBFE24B6F2C9589338271744C1F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50376CBD57AC6ADEC5BEF97CA2BC453C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>748F1C7F61D88F3FB355A8E829489671</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA201D4E908B03AB88194F31DB5A0BFE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECEAC4694C5DAB8461E0BE5AD3D44F96</key>
+		<key>AB57EF7D8B23701455085EC663E5FA40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
