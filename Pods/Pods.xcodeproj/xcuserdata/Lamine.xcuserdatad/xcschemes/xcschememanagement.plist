@@ -19,12 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-QontoTest.xcscheme</key>
+		<key>Pods-SampleApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-QontoTestTests.xcscheme</key>
+		<key>Pods-SampleAppTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,32 +47,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0701A5848CB7145F872792FCD30EBAF3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1AF7C1D8F46A45C004D58BB6F6B60FC0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2F261E1ADD34AEC7661CA238B7589336</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3ADDFBFE24B6F2C9589338271744C1F1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>50376CBD57AC6ADEC5BEF97CA2BC453C</key>
+		<key>37EA2BB1629E77ED051B807EE6076FC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>748F1C7F61D88F3FB355A8E829489671</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D982B17AFD73B624622DF27FA862B23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7E5DB0FDFE97436E950E1A8A0A6DD530</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -83,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>AB57EF7D8B23701455085EC663E5FA40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC4121A606CF0848C5093C8E25D98ACB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEFB2BBE23589DF1A5CD52EA26A5F8CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

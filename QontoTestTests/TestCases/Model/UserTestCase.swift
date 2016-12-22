@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import QontoTest
+@testable import SampleApp
 
 class UserTestCase: QontoTestCase {
     
