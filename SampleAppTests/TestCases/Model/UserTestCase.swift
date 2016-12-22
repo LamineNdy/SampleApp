@@ -9,7 +9,7 @@
 import XCTest
 @testable import SampleApp
 
-class UserTestCase: QontoTestCase {
+class UserTestCase: SampleAppTestCase {
     
     override func setUp() {
         super.setUp()
