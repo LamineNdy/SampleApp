@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E79BA08A1DEF53B30033488E"
-               BuildableName = "QontoTest.app"
-               BlueprintName = "QontoTest"
-               ReferencedContainer = "container:QontoTest.xcodeproj">
+               BuildableName = "SimpleMasterDetailApp.app"
+               BlueprintName = "SimpleMasterDetailApp"
+               ReferencedContainer = "container:SimpleMasterDetailApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E79BA09E1DEF53B30033488E"
-               BuildableName = "QontoTestTests.xctest"
-               BlueprintName = "QontoTestTests"
-               ReferencedContainer = "container:QontoTest.xcodeproj">
+               BuildableName = "SimpleMasterDetailAppTests.xctest"
+               BlueprintName = "SimpleMasterDetailAppTests"
+               ReferencedContainer = "container:SimpleMasterDetailApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E79BA08A1DEF53B30033488E"
-            BuildableName = "QontoTest.app"
-            BlueprintName = "QontoTest"
-            ReferencedContainer = "container:QontoTest.xcodeproj">
+            BuildableName = "SimpleMasterDetailApp.app"
+            BlueprintName = "SimpleMasterDetailApp"
+            ReferencedContainer = "container:SimpleMasterDetailApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E79BA08A1DEF53B30033488E"
-            BuildableName = "QontoTest.app"
-            BlueprintName = "QontoTest"
-            ReferencedContainer = "container:QontoTest.xcodeproj">
+            BuildableName = "SimpleMasterDetailApp.app"
+            BlueprintName = "SimpleMasterDetailApp"
+            ReferencedContainer = "container:SimpleMasterDetailApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E79BA08A1DEF53B30033488E"
-            BuildableName = "QontoTest.app"
-            BlueprintName = "QontoTest"
-            ReferencedContainer = "container:QontoTest.xcodeproj">
+            BuildableName = "SimpleMasterDetailApp.app"
+            BlueprintName = "SimpleMasterDetailApp"
+            ReferencedContainer = "container:SimpleMasterDetailApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

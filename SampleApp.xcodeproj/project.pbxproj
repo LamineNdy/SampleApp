@@ -78,12 +78,12 @@
 		D6FA36201DF04E7200141094 /* User+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Storage.swift"; sourceTree = "<group>"; };
 		D6FA36221DF061FE00141094 /* UIViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UI.swift"; sourceTree = "<group>"; };
 		D82EC2EF4AE6B561E1793A0D /* Pods_QontoTest_QontoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoTest_QontoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E79BA08B1DEF53B30033488E /* QontoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79BA08B1DEF53B30033488E /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA08E1DEF53B30033488E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79BA0951DEF53B30033488E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79BA0981DEF53B30033488E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79BA09A1DEF53B30033488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E79BA09F1DEF53B30033488E /* QontoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QontoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79BA09F1DEF53B30033488E /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79BA0A51DEF53B30033488E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79BA0B61DEF55470033488E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E79BA0B81DEF55540033488E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
@@ -200,8 +200,8 @@
 		E79BA08C1DEF53B30033488E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E79BA08B1DEF53B30033488E /* QontoTest.app */,
-				E79BA09F1DEF53B30033488E /* QontoTestTests.xctest */,
+				E79BA08B1DEF53B30033488E /* SampleApp.app */,
+				E79BA09F1DEF53B30033488E /* SampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E79BA08A1DEF53B30033488E /* QontoTest */ = {
+		E79BA08A1DEF53B30033488E /* SampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E79BA0A81DEF53B30033488E /* Build configuration list for PBXNativeTarget "QontoTest" */;
+			buildConfigurationList = E79BA0A81DEF53B30033488E /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
 				AD1520FB482AD39216D8F2D5 /* [CP] Check Pods Manifest.lock */,
 				E79BA0871DEF53B30033488E /* Sources */,
@@ -313,14 +313,14 @@
 			);
 			dependencies = (
 			);
-			name = QontoTest;
+			name = SampleApp;
 			productName = QontoTest;
-			productReference = E79BA08B1DEF53B30033488E /* QontoTest.app */;
+			productReference = E79BA08B1DEF53B30033488E /* SampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E79BA09E1DEF53B30033488E /* QontoTestTests */ = {
+		E79BA09E1DEF53B30033488E /* SampleAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E79BA0AB1DEF53B30033488E /* Build configuration list for PBXNativeTarget "QontoTestTests" */;
+			buildConfigurationList = E79BA0AB1DEF53B30033488E /* Build configuration list for PBXNativeTarget "SampleAppTests" */;
 			buildPhases = (
 				F879D30F706285E123979073 /* [CP] Check Pods Manifest.lock */,
 				E79BA09B1DEF53B30033488E /* Sources */,
@@ -334,9 +334,9 @@
 			dependencies = (
 				E79BA0A11DEF53B30033488E /* PBXTargetDependency */,
 			);
-			name = QontoTestTests;
+			name = SampleAppTests;
 			productName = QontoTestTests;
-			productReference = E79BA09F1DEF53B30033488E /* QontoTestTests.xctest */;
+			productReference = E79BA09F1DEF53B30033488E /* SampleAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -362,7 +362,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E79BA0861DEF53B30033488E /* Build configuration list for PBXProject "QontoTest" */;
+			buildConfigurationList = E79BA0861DEF53B30033488E /* Build configuration list for PBXProject "SampleApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -375,8 +375,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E79BA08A1DEF53B30033488E /* QontoTest */,
-				E79BA09E1DEF53B30033488E /* QontoTestTests */,
+				E79BA08A1DEF53B30033488E /* SampleApp */,
+				E79BA09E1DEF53B30033488E /* SampleAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -542,7 +542,7 @@
 /* Begin PBXTargetDependency section */
 		E79BA0A11DEF53B30033488E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E79BA08A1DEF53B30033488E /* QontoTest */;
+			target = E79BA08A1DEF53B30033488E /* SampleApp */;
 			targetProxy = E79BA0A01DEF53B30033488E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -698,7 +698,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lamine.company.QontoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QontoTest.app/QontoTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
 			};
 			name = Debug;
 		};
@@ -714,14 +714,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lamine.company.QontoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QontoTest.app/QontoTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E79BA0861DEF53B30033488E /* Build configuration list for PBXProject "QontoTest" */ = {
+		E79BA0861DEF53B30033488E /* Build configuration list for PBXProject "SampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E79BA0A61DEF53B30033488E /* Debug */,
@@ -730,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E79BA0A81DEF53B30033488E /* Build configuration list for PBXNativeTarget "QontoTest" */ = {
+		E79BA0A81DEF53B30033488E /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E79BA0A91DEF53B30033488E /* Debug */,
@@ -739,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E79BA0AB1DEF53B30033488E /* Build configuration list for PBXNativeTarget "QontoTestTests" */ = {
+		E79BA0AB1DEF53B30033488E /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E79BA0AC1DEF53B30033488E /* Debug */,
