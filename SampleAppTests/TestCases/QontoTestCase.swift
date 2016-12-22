@@ -15,7 +15,7 @@ let ContentTypeKey = "Content-Type"
 let ContentTypeValue = "application/json"
 
 
-class QontoTestCase: XCTestCase {
+class SampleAppTestCase: XCTestCase {
     
   override func setUp() {
     super.setUp()

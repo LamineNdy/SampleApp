@@ -7,6 +7,7 @@
 //
 
 import UIKit
+@testable import SampleApp
 
 class AlbumBuilder: NSObject {
   private var title :String = ""
