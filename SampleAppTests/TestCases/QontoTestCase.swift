@@ -29,7 +29,7 @@ class SampleAppTestCase: XCTestCase {
   }
   
   func setupStub(filename : String, status : Int32) {
-    stub(condition: isExtension("json")) { _ in
+    stub(condition: isMethodGET()) { _ in
       let stubPath = OHPathForFile(filename, type(of: self))
       return fixture(filePath: stubPath!, headers: [ContentTypeKey as NSObject: ContentTypeValue as AnyObject])
     }

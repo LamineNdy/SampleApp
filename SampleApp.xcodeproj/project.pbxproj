@@ -33,6 +33,10 @@
 		E78EBCA11E0C944B00B5967E /* BuilMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EBC8D1E0C943C00B5967E /* BuilMe.swift */; };
 		E78EBCA21E0C944B00B5967E /* PhotoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EBC8E1E0C943C00B5967E /* PhotoBuilder.swift */; };
 		E78EBCA31E0C944B00B5967E /* UserBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EBC8F1E0C943C00B5967E /* UserBuilder.swift */; };
+		E7A395831E1C4F0E008428E1 /* UserTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EBC971E0C943C00B5967E /* UserTestCase.swift */; };
+		E7A395841E1C4F11008428E1 /* QontoTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EBC981E0C943C00B5967E /* QontoTestCase.swift */; };
+		E7A395851E1C4F22008428E1 /* FetchAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EBC9A1E0C943C00B5967E /* FetchAlbums.swift */; };
+		E7A395861E1C4F25008428E1 /* FetchUserTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78EBC9B1E0C943C00B5967E /* FetchUserTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -493,9 +497,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E78EBCA01E0C944B00B5967E /* AlbumBuilder.swift in Sources */,
+				E7A395831E1C4F0E008428E1 /* UserTestCase.swift in Sources */,
 				E78EBCA21E0C944B00B5967E /* PhotoBuilder.swift in Sources */,
 				E78EBCA31E0C944B00B5967E /* UserBuilder.swift in Sources */,
 				E78EBCA11E0C944B00B5967E /* BuilMe.swift in Sources */,
+				E7A395841E1C4F11008428E1 /* QontoTestCase.swift in Sources */,
+				E7A395851E1C4F22008428E1 /* FetchAlbums.swift in Sources */,
+				E7A395861E1C4F25008428E1 /* FetchUserTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,9 +6,10 @@
 //  Copyright © 2016 Lamine. All rights reserved.
 //
 
+@testable import SampleApp
 import XCTest
 
-class FetchUserTestCase: QontoTestCase {
+class FetchUserTestCase: SampleAppTestCase {
     
     override func setUp() {
         super.setUp()

@@ -6,9 +6,10 @@
 //  Copyright © 2016 Lamine. All rights reserved.
 //
 
+@testable import SampleApp
 import XCTest
 
-class FetchAlbums: QontoTestCase {
+class FetchAlbums: SampleAppTestCase {
     
     override func setUp() {
         super.setUp()
