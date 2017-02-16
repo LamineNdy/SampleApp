@@ -1,0 +1,5 @@
+language: swift #1
+osx_image: xcode8.2.1 #2
+workspace: Alamofire.xcworkspace #3
+xcode_scheme: SampleApp #4
+xcode_sdk: iphonesimulator10.2 #5
